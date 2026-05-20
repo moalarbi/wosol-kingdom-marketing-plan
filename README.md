@@ -25,9 +25,9 @@ http://127.0.0.1:4173/
 
 ## Generated Images
 
-- `assets/images/hero-concierge.png`
-- `assets/images/service-booth.png`
-- `assets/images/purchase-handling.png`
-- `assets/images/visitor-journey.png`
-- `assets/images/social-details.png`
-- `assets/images/roadmap-kpi.png`
+- `assets/images-jpg/hero-concierge.jpg`
+- `assets/images-jpg/service-booth.jpg`
+- `assets/images-jpg/purchase-handling.jpg`
+- `assets/images-jpg/visitor-journey.jpg`
+- `assets/images-jpg/social-details.jpg`
+- `assets/images-jpg/roadmap-kpi.jpg`
