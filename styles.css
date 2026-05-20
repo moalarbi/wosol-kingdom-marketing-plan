@@ -184,8 +184,16 @@ p + p {
 .section-media img {
   display: block;
   width: 100%;
+}
+
+.image-frame img {
   height: 100%;
   object-fit: cover;
+}
+
+.section-media img {
+  height: auto;
+  object-fit: contain;
 }
 
 .image-frame::before,
@@ -359,7 +367,8 @@ p + p {
 
 .section-media {
   position: relative;
-  height: 360px;
+  aspect-ratio: 8 / 5;
+  height: auto;
   margin: -8px 0 36px;
   overflow: hidden;
   border: 1px solid var(--border);
@@ -898,7 +907,7 @@ p + p {
   }
 
   .section-media {
-    height: 250px;
+    aspect-ratio: 8 / 5;
     margin-bottom: 28px;
   }
 
