@@ -1,9 +1,9 @@
 /* ============================================================
-   WOSOL Cinematic — Full-width centered layout
+   WOSOL Cinematic — aligned with executive hub system
    ============================================================ */
 
 /* ── Body: cream gradient ── */
-body {
+.promo-page {
   background:
     radial-gradient(circle at 13% 5%, rgba(209,199,186,.36), transparent 32rem),
     linear-gradient(180deg, #f8f6f0 0, #f6f4f1 42%, #ece7df 100%);
@@ -50,14 +50,14 @@ body {
   75%  { transform: translate3d(-.5%,  -1.5%, 0); }
 }
 
-/* ── Page wrapper — full viewport width, no side constraints ── */
-.page-wrapper {
+.promo-page .page-wrapper {
   position: relative;
   z-index: 1;
-  direction: ltr; /* force LTR — prevent RTL html dir from breaking grid layout */
-  width: 100%;
-  padding: 0 0 82px;
-  box-sizing: border-box;
+  direction: rtl;
+  width: min(1040px, 100%);
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 32px 82px;
   overflow-x: hidden;
 }
 
@@ -65,7 +65,7 @@ body {
    OPENING SEQUENCE
    ═══════════════════════════════════════════════════════════ */
 .opening-sequence {
-  min-height: 72vh;
+  min-height: 62vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,11 +78,12 @@ body {
 .opening-sequence .page-title {
   margin: 0 0 14px;
   color: var(--navy-deep, #041026);
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(32px, 5vw, 62px);
-  font-weight: 500;
-  letter-spacing: .04em;
-  line-height: 1.1;
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(30px, 5vw, 58px);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.12;
+  white-space: normal;
 }
 
 .opening-title {
@@ -95,6 +96,11 @@ body {
   width: min(640px, 100%);
   text-align: center;
   margin-bottom: 0;
+}
+
+.opening-summary .exec-summary {
+  direction: ltr;
+  text-align: center;
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -222,11 +228,11 @@ body {
 .scene-title {
   margin: 0 0 10px;
   color: var(--navy-deep, #041026);
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(36px, 5.5vw, 82px);
-  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(30px, 4.8vw, 58px);
+  font-weight: 600;
   letter-spacing: 0;
-  line-height: .96;
+  line-height: 1.08;
 }
 
 .scene-title-ar {
@@ -275,10 +281,10 @@ body {
   display: block;
   color: var(--navy-deep, #041026);
   direction: ltr;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Poppins', sans-serif;
   font-size: clamp(22px, 2.8vw, 34px);
-  font-weight: 500;
-  line-height: 1.08;
+  font-weight: 600;
+  line-height: 1.16;
 }
 
 /* Final scene emotion card: dark */
@@ -409,11 +415,11 @@ body {
 .final-brand-frame h3 {
   margin: 0 auto 24px;
   color: var(--navy-deep, #041026);
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(38px, 7vw, 96px);
-  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(30px, 5.6vw, 62px);
+  font-weight: 600;
   letter-spacing: 0;
-  line-height: .98;
+  line-height: 1.12;
 }
 
 .final-brand-frame p {
@@ -431,16 +437,19 @@ body {
    RESPONSIVE
    ═══════════════════════════════════════════════════════════ */
 @media (max-width: 768px) {
-  .page-wrapper { padding: 0 0 52px; }
+  .promo-page .page-wrapper { padding: 0 20px 52px; }
 
-  .opening-sequence { padding-left: 16px; padding-right: 16px; }
+  .opening-sequence {
+    min-height: auto;
+    padding: 56px 0 44px;
+  }
 
   .scene-progress { display: none; }
 
-  .cinematic-scene { padding: 48px 0; }
+  .cinematic-scene { padding: 42px 0; }
 
   .scene-copy {
-    padding: 24px 16px;
+    padding: 24px 0;
     width: 100%;
   }
 
@@ -453,13 +462,16 @@ body {
 
   .scene-divider { width: min(320px, 80%); }
 
-  .final-brand-frame { text-align: center; padding-left: 16px; padding-right: 16px; }
+  .final-brand-frame { text-align: center; padding-left: 0; padding-right: 0; }
   .final-brand-frame p { margin-left: auto; margin-right: auto; }
 }
 
 @media (max-width: 480px) {
-  .opening-sequence { min-height: 60vh; }
-  .scene-title { font-size: clamp(32px, 9vw, 56px); }
+  .opening-sequence .page-title,
+  .scene-title {
+    font-size: clamp(26px, 8vw, 38px);
+  }
+
   .scene-narrative { font-size: 13px; line-height: 1.85; }
 }
 
