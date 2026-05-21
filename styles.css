@@ -50,6 +50,13 @@ a {
   border: 0;
 }
 
+.en-term {
+  direction: ltr;
+  unicode-bidi: isolate;
+  font-family: 'Poppins', sans-serif;
+  white-space: nowrap;
+}
+
 p + p {
   margin-top: 14px;
 }
@@ -306,6 +313,10 @@ p + p {
   white-space: nowrap;
 }
 
+.hub-title-compact {
+  display: none;
+}
+
 .hub-subtitle {
   max-width: 820px;
   margin: 0 auto;
@@ -400,6 +411,15 @@ p + p {
   color: var(--text-body);
   font-size: 13.5px;
   line-height: 1.9;
+}
+
+.hub-card .en-card-note {
+  direction: ltr;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-align: left;
 }
 
 .hub-card .card-cta {
@@ -1536,6 +1556,63 @@ p + p {
   .mini-grid {
     grid-template-columns: 1fr;
   }
+
+  .budget-table-wrap {
+    overflow: visible;
+    border: 0;
+    background: transparent;
+  }
+
+  .budget-table {
+    min-width: 0;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+  }
+
+  .budget-table thead {
+    display: none;
+  }
+
+  .budget-table,
+  .budget-table tbody,
+  .budget-table tr,
+  .budget-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .budget-table tr {
+    border: 1px solid var(--border);
+    background: #fff;
+  }
+
+  .budget-table td {
+    display: grid;
+    grid-template-columns: minmax(110px, 0.36fr) minmax(0, 1fr);
+    gap: 14px;
+    align-items: start;
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--border);
+    border-left: 0;
+    font-size: 13px;
+    text-align: right;
+  }
+
+  .budget-table td:last-child {
+    border-bottom: 0;
+  }
+
+  .budget-table td::before {
+    content: attr(data-label);
+    color: var(--text-light);
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-weight: 600;
+    direction: rtl;
+  }
+
+  .budget-table td:first-child {
+    direction: ltr;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1561,20 +1638,27 @@ p + p {
   }
 
   .page-title {
-    font-size: clamp(17px, 4.6vw, 24px);
+    font-size: clamp(26px, 7.4vw, 30px);
+    line-height: 1.25;
+    white-space: normal;
   }
 
   .hub-nav {
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: stretch;
     margin-top: -24px;
     direction: ltr;
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    padding-bottom: 4px;
+    overflow: visible;
+    padding-bottom: 0;
   }
 
   .hub-nav a {
-    flex: 0 0 auto;
+    justify-content: center;
+    min-width: 0;
+    padding: 8px 6px;
+    font-size: 11px;
+    text-align: center;
   }
 
   .hub-hero {
@@ -1584,12 +1668,26 @@ p + p {
   }
 
   .hub-title {
-    font-size: clamp(15px, 4.3vw, 28px);
+    font-size: clamp(16px, 4.3vw, 28px);
   }
 
   .hub-subtitle {
     font-size: 13.5px;
     line-height: 1.8;
+  }
+
+  .doc-label,
+  .exec-label,
+  .closing-label,
+  .panel-label,
+  .block-label,
+  .visual-label,
+  .section-title-en {
+    font-size: 10.5px;
+  }
+
+  .logo-sub {
+    font-size: 9px;
   }
 
   .hub-hero-panel,
@@ -1635,6 +1733,63 @@ p + p {
     grid-template-columns: 1fr;
   }
 
+  .budget-table-wrap {
+    overflow: visible;
+    border: 0;
+    background: transparent;
+  }
+
+  .budget-table {
+    min-width: 0;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+  }
+
+  .budget-table thead {
+    display: none;
+  }
+
+  .budget-table,
+  .budget-table tbody,
+  .budget-table tr,
+  .budget-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .budget-table tr {
+    border: 1px solid var(--border);
+    background: #fff;
+  }
+
+  .budget-table td {
+    display: grid;
+    grid-template-columns: minmax(86px, 0.42fr) minmax(0, 1fr);
+    gap: 12px;
+    align-items: start;
+    padding: 13px 16px;
+    border-bottom: 1px solid var(--border);
+    border-left: 0;
+    font-size: 13px;
+    text-align: right;
+  }
+
+  .budget-table td:last-child {
+    border-bottom: 0;
+  }
+
+  .budget-table td::before {
+    content: attr(data-label);
+    color: var(--text-light);
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-weight: 600;
+    direction: rtl;
+  }
+
+  .budget-table td:first-child {
+    direction: ltr;
+  }
+
   .objective-row {
     grid-template-columns: 1fr;
     gap: 8px;
@@ -1656,6 +1811,20 @@ p + p {
   .site-footer {
     flex-direction: column;
     text-align: center;
+  }
+}
+
+@media (max-width: 370px) {
+  .hub-title {
+    font-size: clamp(17px, 5.1vw, 19px);
+  }
+
+  .hub-title-full {
+    display: none;
+  }
+
+  .hub-title-compact {
+    display: inline;
   }
 }
 
