@@ -2,11 +2,11 @@
 (function () {
   'use strict';
 
-  const isDesktop = window.matchMedia('(min-width: 901px)').matches;
-  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var isDesktop = window.matchMedia('(min-width: 1061px)').matches;
+  var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* ── 1. Scroll reveal via IntersectionObserver ── */
-  const revealObserver = new IntersectionObserver(
+  /* ── 1. Scroll reveal: scene-frame and scene-copy ── */
+  var revealObserver = new IntersectionObserver(
     function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
@@ -15,26 +15,27 @@
         }
       });
     },
-    { threshold: 0.10, rootMargin: '0px 0px -40px 0px' }
+    { threshold: 0.10, rootMargin: '0px 0px -60px 0px' }
   );
 
-  document.querySelectorAll('.cin-frame').forEach(function (el) {
+  document.querySelectorAll('.scene-frame, .scene-copy').forEach(function (el) {
     revealObserver.observe(el);
   });
 
-  /* ── 2. Parallax (desktop + no reduced-motion only) ── */
+  /* ── 2. Subtle scale parallax (desktop only, no translateY — images are full height) ── */
   if (isDesktop && !reducedMotion) {
-    var scenes = Array.from(document.querySelectorAll('.cin-scene'));
+    var scenes = Array.from(document.querySelectorAll('.cinematic-scene'));
 
     function updateParallax() {
       var vh = window.innerHeight;
       scenes.forEach(function (scene) {
         var rect = scene.getBoundingClientRect();
         var center = rect.top + rect.height / 2 - vh / 2;
-        var pct = Math.max(-1, Math.min(1, center / vh));
-        var img = scene.querySelector('.cin-img');
+        var pct = Math.abs(Math.max(-1, Math.min(1, center / vh)));
+        var img = scene.querySelector('.scene-image-parallax img');
         if (img) {
-          img.style.transform = 'translateY(' + (pct * 5).toFixed(2) + '%) scale(1.06)';
+          var scale = 1 + pct * 0.02;
+          img.style.transform = 'scale(' + scale.toFixed(3) + ')';
         }
       });
     }
@@ -43,13 +44,29 @@
     updateParallax();
   }
 
-  /* ── 3. Scene progress sidebar — active dot ── */
-  var dots = document.querySelectorAll('.cin-dot[data-target]');
+  /* ── 3. Scene progress fill ── */
+  var progressFill = document.querySelector('.scene-progress-fill');
+  var spine = document.querySelector('.story-spine');
+
+  if (progressFill && spine) {
+    function updateProgressFill() {
+      var rect = spine.getBoundingClientRect();
+      var total = spine.offsetHeight - window.innerHeight;
+      var scrolled = -rect.top;
+      var pct = Math.max(0, Math.min(1, scrolled / total));
+      progressFill.style.transform = 'scaleY(' + pct + ')';
+    }
+    window.addEventListener('scroll', updateProgressFill, { passive: true });
+    updateProgressFill();
+  }
+
+  /* ── 4. Scene progress sidebar — active dot ── */
+  var dots = document.querySelectorAll('.scene-progress-dot[data-target]');
   if (dots.length) {
-    var progressObserver = new IntersectionObserver(
+    var dotObserver = new IntersectionObserver(
       function (entries) {
         entries.forEach(function (entry) {
-          var dot = document.querySelector('.cin-dot[data-target="' + entry.target.id + '"]');
+          var dot = document.querySelector('.scene-progress-dot[data-target="' + entry.target.id + '"]');
           if (dot) {
             dot.classList.toggle('is-active', entry.isIntersecting);
           }
@@ -58,13 +75,13 @@
       { threshold: 0.35 }
     );
 
-    document.querySelectorAll('.cin-scene[id]').forEach(function (scene) {
-      progressObserver.observe(scene);
+    document.querySelectorAll('.cinematic-scene[id]').forEach(function (scene) {
+      dotObserver.observe(scene);
     });
   }
 
-  /* ── 4. Opening sequence fade-in on load ── */
-  var opening = document.querySelector('.cin-opening');
+  /* ── 5. Opening sequence fade-in on load ── */
+  var opening = document.querySelector('.opening-sequence');
   if (opening) {
     opening.style.opacity = '0';
     opening.style.transform = 'translateY(28px)';

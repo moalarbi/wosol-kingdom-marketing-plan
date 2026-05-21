@@ -6,219 +6,345 @@
   <title>WOSOL Concierge × Kingdom Centre | The Handled Life</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css" />
   <link rel="stylesheet" href="cinematic.css" />
-  <link rel="preload" as="image" href="../assets/promo-images/scene-02.png" />
-  <link rel="preload" as="image" href="../assets/promo-images/scene-03.png" />
+  <link rel="preload" as="image" href="/assets/promo-images/scene-02.png" />
+  <link rel="preload" as="image" href="/assets/promo-images/scene-03.png" />
   <script src="/scripts/shared-shell.js" defer></script>
   <script src="cinematic.js" defer></script>
 </head>
 <body>
-  <div class="pattern-bg" aria-hidden="true"></div>
+
+  <div class="ambient-layer ambient-layer-one" aria-hidden="true"></div>
+  <div class="ambient-layer ambient-layer-two" aria-hidden="true"></div>
+  <div class="film-grain" aria-hidden="true"></div>
 
   <div data-shell-header data-header-meta="Cinematic Story · Kingdom Centre · 2026"></div>
   <div data-shell-nav data-current-page="promo-film"></div>
 
   <main id="top">
+    <div class="page-wrapper">
 
-    <!-- OPENING -->
-    <div class="cin-opening">
-      <span class="cin-opening-eyebrow en">A Cinematic Story by WOSOL Concierge × Kingdom Centre</span>
-      <h1 class="cin-opening-title en">THE HANDLED LIFE</h1>
-      <p class="cin-opening-subtitle en">Luxury is no longer more. It is less to carry.</p>
-      <p class="cin-opening-summary">
-        In a city moving fast, some people are not searching for more luxury.
-        They are searching for <strong>freedom from thinking</strong>.
-        WOSOL becomes the quiet hospitality layer inside Kingdom Centre:
-        present before the request, precise during the moment,
-        invisible after the care is complete.
-      </p>
-      <div class="cin-opening-divider" aria-hidden="true"></div>
-    </div>
-
-    <!-- SCENE PROGRESS SIDEBAR -->
-    <aside class="cin-progress" aria-label="Scene navigation">
-      <a href="#scene-02" class="cin-dot en" data-target="scene-02" data-label="02" aria-label="Scene 02 — The Door"></a>
-      <a href="#scene-03" class="cin-dot en" data-target="scene-03" data-label="03" aria-label="Scene 03 — The White Gloves"></a>
-      <a href="#scene-04" class="cin-dot en" data-target="scene-04" data-label="04" aria-label="Scene 04 — The Movement"></a>
-      <a href="#scene-05" class="cin-dot en" data-target="scene-05" data-label="05" aria-label="Scene 05 — Private Shopping"></a>
-      <a href="#scene-06" class="cin-dot en" data-target="scene-06" data-label="06" aria-label="Scene 06 — The Concierge Desk"></a>
-      <a href="#scene-07" class="cin-dot en" data-target="scene-07" data-label="07" aria-label="Scene 07 — The Details"></a>
-      <a href="#scene-09" class="cin-dot en" data-target="scene-09" data-label="09" aria-label="Scene 09 — The Final Delivery"></a>
-      <a href="#scene-10" class="cin-dot en" data-target="scene-10" data-label="10" aria-label="Scene 10 — The Handled Life"></a>
-    </aside>
-
-    <!-- STORY SPINE -->
-    <div class="cin-spine">
-
-      <!-- SCENE 02 -->
-      <section class="cin-scene" id="scene-02">
-        <div class="cin-scene-inner">
-          <div class="cin-frame">
-            <div class="cin-parallax-wrap">
-              <img class="cin-img" src="../assets/promo-images/scene-02.png" alt="Scene 02 — The Door" loading="eager" decoding="async" />
-            </div>
-            <div class="cin-gradient" aria-hidden="true"></div>
-            <div class="cin-copy">
-              <span class="cin-scene-num en">Scene 02</span>
-              <h2 class="cin-scene-title en">The Door</h2>
-              <p class="cin-scene-ar">الدخول إلى عالم آخر</p>
-              <p class="cin-narrative en">Massive luxury doors slowly open. Warm golden light appears. The guest enters another world.</p>
-            </div>
-          </div>
+      <!-- OPENING -->
+      <section class="opening-sequence">
+        <div class="opening-title">
+          <span class="doc-label en">A Cinematic Story by WOSOL Concierge × Kingdom Centre</span>
+          <h1 class="page-title en">THE HANDLED LIFE</h1>
+          <p class="scene-title-ar" style="font-size:clamp(16px,2vw,22px);margin:0 0 18px;color:var(--navy-light,#1f466d)">الحياة المُعتنى بها</p>
+        </div>
+        <div class="opening-summary">
+          <p class="exec-summary en" style="direction:ltr;text-align:center">
+            In a city that never slows down…<br>
+            there are people who are not searching for more luxury alone.<br>
+            They are searching for:<br>
+            <strong>freedom from thinking about the details.</strong>
+          </p>
         </div>
       </section>
 
-      <div class="cin-sep" aria-hidden="true"></div>
+      <!-- SCENE PROGRESS (fixed left) -->
+      <aside class="scene-progress" aria-label="Scene navigation">
+        <div class="scene-progress-track">
+          <div class="scene-progress-fill"></div>
+        </div>
+        <div class="scene-progress-list">
+          <a class="scene-progress-dot en" href="#scene-02" data-target="scene-02" aria-label="Scene 02">02</a>
+          <a class="scene-progress-dot en" href="#scene-03" data-target="scene-03" aria-label="Scene 03">03</a>
+          <a class="scene-progress-dot en" href="#scene-04" data-target="scene-04" aria-label="Scene 04">04</a>
+          <a class="scene-progress-dot en" href="#scene-05" data-target="scene-05" aria-label="Scene 05">05</a>
+          <a class="scene-progress-dot en" href="#scene-06" data-target="scene-06" aria-label="Scene 06">06</a>
+          <a class="scene-progress-dot en" href="#scene-07" data-target="scene-07" aria-label="Scene 07">07</a>
+          <a class="scene-progress-dot en" href="#scene-09" data-target="scene-09" aria-label="Scene 09">09</a>
+          <a class="scene-progress-dot en" href="#scene-10" data-target="scene-10" aria-label="Scene 10">10</a>
+        </div>
+      </aside>
 
-      <!-- SCENE 03 -->
-      <section class="cin-scene" id="scene-03">
-        <div class="cin-scene-inner">
-          <div class="cin-frame">
-            <div class="cin-parallax-wrap">
-              <img class="cin-img" src="../assets/promo-images/scene-03.png" alt="Scene 03 — The White Gloves" loading="lazy" decoding="async" />
+      <!-- STORY SPINE -->
+      <div class="story-spine">
+
+        <!-- SCENE 02 — The Door -->
+        <section class="cinematic-scene" id="scene-02">
+          <div class="scene-shell">
+            <div class="scene-frame">
+              <div class="scene-image-parallax">
+                <img src="/assets/promo-images/scene-02.png" alt="Scene 02 — The Door" loading="eager" decoding="async" />
+              </div>
+              <div class="scene-frame-border" aria-hidden="true"></div>
             </div>
-            <div class="cin-gradient" aria-hidden="true"></div>
-            <div class="cin-copy">
-              <span class="cin-scene-num en">Scene 03</span>
-              <h2 class="cin-scene-title en">The White Gloves</h2>
-              <p class="cin-scene-ar">الدقة قبل الطلب</p>
-              <p class="cin-narrative en">Extreme detail shots. White gloves. Gold buttons. Luxury precision.</p>
+            <div class="scene-copy">
+              <span class="section-num en">Scene 02</span>
+              <h2 class="scene-title en">The Door</h2>
+              <p class="scene-title-ar">الدخول إلى عالم آخر</p>
+              <p class="scene-narrative en">
+                The day begins just before sunset.<br>
+                A sleek black luxury car arrives quietly at Kingdom Centre.<br>
+                No crowds. No rushing.<br>
+                Just a calm moment of arrival…<br>
+                as if the place had been expecting the guest all along.<br><br>
+                The grand doors open slowly.<br>
+                Warm golden light reflects across polished marble floors.<br>
+                The guest walks in carrying nothing.<br>
+                No bags. No chaos. No unnecessary details.<br>
+                Only a seamless transition from the outside world…<br>
+                into an entirely different experience.
+              </p>
+              <div class="scene-emotion">
+                <span class="cin-emotion-label">The feeling</span>
+                <strong>Arrival</strong>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <div class="cin-sep" aria-hidden="true"></div>
+        <hr class="scene-divider" aria-hidden="true" />
 
-      <!-- SCENE 04 -->
-      <section class="cin-scene" id="scene-04">
-        <div class="cin-scene-inner">
-          <div class="cin-frame">
-            <div class="cin-parallax-wrap">
-              <img class="cin-img" src="../assets/promo-images/scene-04.png" alt="Scene 04 — The Movement" loading="lazy" decoding="async" />
+        <!-- SCENE 03 — The White Gloves -->
+        <section class="cinematic-scene" id="scene-03">
+          <div class="scene-shell">
+            <div class="scene-frame">
+              <div class="scene-image-parallax">
+                <img src="/assets/promo-images/scene-03.png" alt="Scene 03 — The White Gloves" loading="lazy" decoding="async" />
+              </div>
+              <div class="scene-frame-border" aria-hidden="true"></div>
             </div>
-            <div class="cin-gradient" aria-hidden="true"></div>
-            <div class="cin-copy">
-              <span class="cin-scene-num en">Scene 04</span>
-              <h2 class="cin-scene-title en">The Movement</h2>
-              <p class="cin-scene-ar">حركة بلا احتكاك</p>
-              <p class="cin-narrative en">Luxury luggage trolley moving through Kingdom Centre. Soft reflections. Elegant motion.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="cin-sep" aria-hidden="true"></div>
-
-      <!-- SCENE 05 -->
-      <section class="cin-scene" id="scene-05">
-        <div class="cin-scene-inner">
-          <div class="cin-frame">
-            <div class="cin-parallax-wrap">
-              <img class="cin-img" src="../assets/promo-images/scene-05.png" alt="Scene 05 — Private Shopping" loading="lazy" decoding="async" />
-            </div>
-            <div class="cin-gradient" aria-hidden="true"></div>
-            <div class="cin-copy">
-              <span class="cin-scene-num en">Scene 05</span>
-              <h2 class="cin-scene-title en">Private Shopping</h2>
-              <p class="cin-scene-ar">الحياة حين تصبح أخف</p>
-              <p class="cin-narrative en">Elegant Saudi woman shopping. Butler carries everything silently.</p>
+            <div class="scene-copy">
+              <span class="section-num en">Scene 03</span>
+              <h2 class="scene-title en">The White Gloves</h2>
+              <p class="scene-title-ar">الدقة قبل الطلب</p>
+              <p class="scene-narrative en">
+                Inside, the small rituals begin —<br>
+                the ones most people never notice.<br><br>
+                White gloves adjusted with precision.<br>
+                A gold button catching the light softly.<br>
+                Marble reflections.<br>
+                The faint sound of footsteps.<br><br>
+                Luxury here is not explained.<br>
+                It is felt.
+              </p>
+              <div class="scene-emotion">
+                <span class="cin-emotion-label">The feeling</span>
+                <strong>Precision</strong>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <div class="cin-sep" aria-hidden="true"></div>
+        <hr class="scene-divider" aria-hidden="true" />
 
-      <!-- SCENE 06 -->
-      <section class="cin-scene" id="scene-06">
-        <div class="cin-scene-inner">
-          <div class="cin-frame">
-            <div class="cin-parallax-wrap">
-              <img class="cin-img" src="../assets/promo-images/scene-06.png" alt="Scene 06 — The Concierge Desk" loading="lazy" decoding="async" />
+        <!-- SCENE 04 — The Concierge Desk -->
+        <section class="cinematic-scene" id="scene-04">
+          <div class="scene-shell">
+            <div class="scene-frame">
+              <div class="scene-image-parallax">
+                <img src="/assets/promo-images/scene-04.png" alt="Scene 04 — The Concierge Desk" loading="lazy" decoding="async" />
+              </div>
+              <div class="scene-frame-border" aria-hidden="true"></div>
             </div>
-            <div class="cin-gradient" aria-hidden="true"></div>
-            <div class="cin-copy">
-              <span class="cin-scene-num en">Scene 06</span>
-              <h2 class="cin-scene-title en">The Concierge Desk</h2>
-              <p class="cin-scene-ar">قبل أن تسأل</p>
-              <p class="cin-narrative en">Reservations. Coordination. Luxury hospitality desk.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="cin-sep" aria-hidden="true"></div>
-
-      <!-- SCENE 07 -->
-      <section class="cin-scene" id="scene-07">
-        <div class="cin-scene-inner">
-          <div class="cin-frame">
-            <div class="cin-parallax-wrap">
-              <img class="cin-img" src="../assets/promo-images/scene-07.png" alt="Scene 07 — The Details" loading="lazy" decoding="async" />
-            </div>
-            <div class="cin-gradient" aria-hidden="true"></div>
-            <div class="cin-copy">
-              <span class="cin-scene-num en">Scene 07</span>
-              <h2 class="cin-scene-title en">The Details</h2>
-              <p class="cin-scene-ar">حساسية التفاصيل</p>
-              <p class="cin-narrative en">A sensory montage of gloves, gold buttons, marble, espresso, textures, and reflections.</p>
+            <div class="scene-copy">
+              <span class="section-num en">Scene 04</span>
+              <h2 class="scene-title en">The Concierge Desk</h2>
+              <p class="scene-title-ar">قبل أن تسأل</p>
+              <p class="scene-narrative en">
+                Elsewhere inside Kingdom Centre,<br>
+                the concierge team stands behind an elegant marble desk.<br><br>
+                A restaurant reservation.<br>
+                A chauffeur arrangement.<br>
+                A special request.<br><br>
+                Everything is handled quietly…<br>
+                as though the service begins<br>
+                before the guest even asks for it.
+              </p>
+              <div class="scene-emotion">
+                <span class="cin-emotion-label">The feeling</span>
+                <strong>Certainty</strong>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <div class="cin-sep" aria-hidden="true"></div>
+        <hr class="scene-divider" aria-hidden="true" />
 
-      <!-- SCENE 09 -->
-      <section class="cin-scene" id="scene-09">
-        <div class="cin-scene-inner">
-          <div class="cin-frame">
-            <div class="cin-parallax-wrap">
-              <img class="cin-img" src="../assets/promo-images/scene-09.png" alt="Scene 09 — The Final Delivery" loading="lazy" decoding="async" />
+        <!-- SCENE 05 — Private Shopping -->
+        <section class="cinematic-scene" id="scene-05">
+          <div class="scene-shell">
+            <div class="scene-frame">
+              <div class="scene-image-parallax">
+                <img src="/assets/promo-images/scene-05.png" alt="Scene 05 — Private Shopping" loading="lazy" decoding="async" />
+              </div>
+              <div class="scene-frame-border" aria-hidden="true"></div>
             </div>
-            <div class="cin-gradient" aria-hidden="true"></div>
-            <div class="cin-copy">
-              <span class="cin-scene-num en">Scene 09</span>
-              <h2 class="cin-scene-title en">The Final Delivery</h2>
-              <p class="cin-scene-ar">اكتمال العناية</p>
-              <p class="cin-narrative en">Shopping bags carefully arranged into luxury car. Golden hour reflections.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="cin-sep" aria-hidden="true"></div>
-
-      <!-- SCENE 10 -->
-      <section class="cin-scene" id="scene-10">
-        <div class="cin-scene-inner">
-          <div class="cin-frame">
-            <div class="cin-parallax-wrap">
-              <img class="cin-img" src="../assets/promo-images/scene-10.png" alt="Scene 10 — The Handled Life" loading="lazy" decoding="async" />
-            </div>
-            <div class="cin-gradient" aria-hidden="true"></div>
-            <div class="cin-copy">
-              <span class="cin-scene-num en">Scene 10</span>
-              <h2 class="cin-scene-title en">The Handled Life</h2>
-              <p class="cin-scene-ar">الحياة المُعتنى بها</p>
-              <p class="cin-narrative en">You leave without the weight of a list. The bags are in the car. The reservation is confirmed. The path ahead is clear. WOSOL did not add to your day — it quietly removed what would have taken from it. That is the handled life.</p>
+            <div class="scene-copy">
+              <span class="section-num en">Scene 05</span>
+              <h2 class="scene-title en">Private Shopping</h2>
+              <p class="scene-title-ar">الحياة حين تصبح أخف</p>
+              <p class="scene-narrative en">
+                Inside one of the luxury boutiques,<br>
+                an elegant Saudi woman shops calmly.<br>
+                She simply chooses what she loves.<br>
+                Everything else… happens effortlessly behind her.<br><br>
+                The butler carries the shopping bags in refined silence,<br>
+                while reflections of marble, mirrors, and glass<br>
+                turn the space into something cinematic.
+              </p>
+              <div class="scene-emotion">
+                <span class="cin-emotion-label">The feeling</span>
+                <strong>Freedom</strong>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
+
+        <hr class="scene-divider" aria-hidden="true" />
+
+        <!-- SCENE 06 — The Movement -->
+        <section class="cinematic-scene" id="scene-06">
+          <div class="scene-shell">
+            <div class="scene-frame">
+              <div class="scene-image-parallax">
+                <img src="/assets/promo-images/scene-06.png" alt="Scene 06 — The Movement" loading="lazy" decoding="async" />
+              </div>
+              <div class="scene-frame-border" aria-hidden="true"></div>
+            </div>
+            <div class="scene-copy">
+              <span class="section-num en">Scene 06</span>
+              <h2 class="scene-title en">The Movement</h2>
+              <p class="scene-title-ar">حركة بلا احتكاك</p>
+              <p class="scene-narrative en">
+                The gold WOSOL trolley glides quietly<br>
+                through the corridors of Kingdom Centre.<br>
+                Shopping bags arranged with care.<br><br>
+                People glance for a moment…<br>
+                not because of noise,<br>
+                but because the movement itself feels different.<br><br>
+                Everything appears intentional.<br>
+                Even the way the trolley moves.
+              </p>
+              <div class="scene-emotion">
+                <span class="cin-emotion-label">The feeling</span>
+                <strong>Ease</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr class="scene-divider" aria-hidden="true" />
+
+        <!-- SCENE 07 — The Details -->
+        <section class="cinematic-scene" id="scene-07">
+          <div class="scene-shell">
+            <div class="scene-frame">
+              <div class="scene-image-parallax">
+                <img src="/assets/promo-images/scene-07.png" alt="Scene 07 — The Details" loading="lazy" decoding="async" />
+              </div>
+              <div class="scene-frame-border" aria-hidden="true"></div>
+            </div>
+            <div class="scene-copy">
+              <span class="section-num en">Scene 07</span>
+              <h2 class="scene-title en">The Details</h2>
+              <p class="scene-title-ar">حساسية التفاصيل</p>
+              <p class="scene-narrative en">
+                As evening settles over Riyadh,<br>
+                the dining table is already prepared<br>
+                inside a refined restaurant overlooking the skyline.<br>
+                The city glows in the background.<br><br>
+                The butler gently pulls the chair back<br>
+                moments before the guest arrives.<br><br>
+                Everything feels as though it had been arranged hours earlier.<br>
+                Not simply because the place is luxurious…<br>
+                but because someone cared about every detail on your behalf.
+              </p>
+              <div class="scene-emotion">
+                <span class="cin-emotion-label">The feeling</span>
+                <strong>Sensation</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr class="scene-divider" aria-hidden="true" />
+
+        <!-- SCENE 09 — The Final Delivery -->
+        <section class="cinematic-scene" id="scene-09">
+          <div class="scene-shell">
+            <div class="scene-frame">
+              <div class="scene-image-parallax">
+                <img src="/assets/promo-images/scene-09.png" alt="Scene 09 — The Final Delivery" loading="lazy" decoding="async" />
+              </div>
+              <div class="scene-frame-border" aria-hidden="true"></div>
+            </div>
+            <div class="scene-copy">
+              <span class="section-num en">Scene 09</span>
+              <h2 class="scene-title en">The Final Delivery</h2>
+              <p class="scene-title-ar">اكتمال العناية</p>
+              <p class="scene-narrative en">
+                At the end of the day,<br>
+                the shopping bags return to the black car.<br>
+                Perfectly arranged. Ready before the guest arrives.<br><br>
+                The sunset reflects against Kingdom Centre,<br>
+                while the butler pauses for one final moment<br>
+                to ensure everything is flawless.<br><br>
+                The day is over…<br>
+                yet the guest never carried a single burden<br>
+                throughout the entire journey.
+              </p>
+              <div class="scene-emotion">
+                <span class="cin-emotion-label">The feeling</span>
+                <strong>Completion</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr class="scene-divider" aria-hidden="true" />
+
+        <!-- SCENE 10 — The Partnership -->
+        <section class="cinematic-scene scene-final" id="scene-10">
+          <div class="scene-shell">
+            <div class="scene-frame">
+              <div class="scene-image-parallax">
+                <img src="/assets/promo-images/scene-10.png" alt="Scene 10 — The Handled Life" loading="lazy" decoding="async" />
+              </div>
+              <div class="scene-frame-border" aria-hidden="true"></div>
+            </div>
+            <div class="scene-copy">
+              <span class="section-num en">Scene 10</span>
+              <h2 class="scene-title en">The Handled Life</h2>
+              <p class="scene-title-ar">الحياة المُعتنى بها</p>
+              <p class="scene-narrative en">
+                This is where it all begins.<br>
+                Not with a guest's arrival.<br>
+                Not with a service call.<br>
+                But with a commitment —<br>
+                between two names that together define<br>
+                what Saudi luxury means at its finest.<br><br>
+                WOSOL Concierge × Kingdom Centre.<br>
+                A signature placed.<br>
+                A promise made.<br>
+                A new standard established.<br><br>
+                Because true luxury…<br>
+                is not the things you own.<br>
+                It is the things<br>
+                you no longer have to think about.
+              </p>
+              <div class="scene-emotion">
+                <span class="cin-emotion-label">The handled life</span>
+                <strong>الحياة المُعتنى بها</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div><!-- /story-spine -->
+
+      <!-- FINALE -->
+      <section class="final-brand-frame">
+        <span class="closing-label en">Final Insight</span>
+        <h3 class="en">"Luxury is feeling handled."</h3>
+        <p class="en">WOSOL Concierge does not add noise to Kingdom Centre. It adds certainty: the quiet confidence that every movement, reservation, purchase, transfer, and private moment has already been considered.</p>
       </section>
 
-    </div><!-- /cin-spine -->
-
-    <!-- FINALE -->
-    <section class="cin-finale">
-      <span class="closing-label en">Final Insight</span>
-      <h3 class="en">"Luxury is feeling handled."</h3>
-      <p>WOSOL Concierge does not add noise to Kingdom Centre. It adds certainty: the quiet confidence that every movement, reservation, purchase, transfer, and private moment has already been considered.</p>
-    </section>
-
+    </div><!-- /page-wrapper -->
   </main>
 
   <div data-shell-footer data-footer-meta="Confidential · Cinematic Story · 2026"></div>
