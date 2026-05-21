@@ -1,6 +1,7 @@
-# WOSOL Concierge x Kingdom Centre Marketing Plan
+# WOSOL Concierge x Kingdom Centre Strategy Hub
 
-Static executive marketing plan page built from the provided content and WOSOL design system.
+Static multi-page executive strategy hub for the WOSOL Concierge launch inside Kingdom Centre.
+The project preserves the original marketing plan as an internal page and adds connected strategy pages.
 
 ## Run
 
@@ -16,9 +17,14 @@ http://127.0.0.1:4173/
 
 ## Files
 
-- `index.html` - Arabic RTL document content and structure.
-- `styles.css` - WOSOL executive visual system, responsive layout, and local editorial visual panels.
-- `assets/images/` - generated editorial luxury images used by the page.
+- `index.html` - executive hub homepage.
+- `marketing-plan/index.html` - original marketing strategy presentation as an internal page.
+- `uniform-system/index.html` - uniform, gloves, badge, and trolley system.
+- `booth-experience/index.html` - concierge booth and desk experience.
+- `promo-film/index.html` - promo film production direction.
+- `marketing-budget/index.html` - executive marketing budget tables and priorities.
+- `styles.css` - WOSOL executive visual system, responsive layout, and editorial sketch placeholders.
+- `assets/images-jpg/` - generated editorial luxury images used by the marketing plan page.
 - `preview-desktop.png` - desktop verification screenshot.
 - `preview-tablet.png` - tablet verification screenshot.
 - `preview-mobile.png` - mobile verification screenshot.
