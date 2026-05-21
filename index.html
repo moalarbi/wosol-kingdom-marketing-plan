@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css" />
+  <script src="/scripts/shared-shell.js" defer></script>
 </head>
 <body class="hub-page">
   <div class="site-intro" aria-hidden="true">
@@ -22,13 +23,7 @@
   <div class="pattern-bg" aria-hidden="true"></div>
 
   <div class="page-wrapper hub-wrapper">
-    <header class="site-header hub-header">
-      <div class="header-meta">Executive Strategy Hub · Kingdom Centre · 2026</div>
-      <a class="logo-block" href="/" aria-label="WOSOL Concierge">
-        <span class="logo-name">WOSOL</span>
-        <span class="logo-sub">CONCIERGE</span>
-      </a>
-    </header>
+    <div data-shell-header data-header-meta="Executive Strategy Hub · Kingdom Centre · 2026" data-header-class="hub-header"></div>
 
     <main id="top">
       <section class="hub-hero" aria-labelledby="hub-title">
@@ -84,7 +79,7 @@
           <span class="hub-card-mark en">04</span>
           <div class="hub-card-visual sketch-mark sketch-mark-film" aria-hidden="true"></div>
           <h2>Promo Video Direction</h2>
-          <p>Brief إنتاجي لفيلم قصير بعنوان A Day with WOSOL، يشرح الإحساس والحركة واللقطات المطلوبة.</p>
+          <p>The White Gloves Signature</p>
           <span class="card-cta en">Open Film Brief</span>
         </a>
 
@@ -126,13 +121,7 @@
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="footer-logo">
-        <span class="logo-name">WOSOL</span>
-        <span class="logo-sub">CONCIERGE</span>
-      </div>
-      <div class="footer-meta">Confidential · Executive Strategy Hub · 2026</div>
-    </footer>
+    <div data-shell-footer data-footer-meta="Confidential · Executive Strategy Hub · 2026"></div>
   </div>
 
   <a class="back-btn" href="#top" aria-label="Back to top">↑</a>

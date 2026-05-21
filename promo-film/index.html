@@ -8,27 +8,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css" />
+  <script src="/scripts/shared-shell.js" defer></script>
 </head>
 <body>
   <div class="pattern-bg" aria-hidden="true"></div>
 
   <div class="page-wrapper">
-    <header class="site-header">
-      <div class="header-meta">Promo Film Direction · Kingdom Centre · 2026</div>
-      <a class="logo-block" href="/" aria-label="WOSOL Concierge">
-        <span class="logo-name">WOSOL</span>
-        <span class="logo-sub">CONCIERGE</span>
-      </a>
-    </header>
-
-    <nav class="hub-nav en" aria-label="Strategy hub navigation">
-      <a href="/">Hub</a>
-      <a href="/marketing-plan/">Marketing Strategy</a>
-      <a href="/uniform-system/">Uniform & Trolley</a>
-      <a href="/booth-experience/">Booth Experience</a>
-      <a href="/promo-film/" aria-current="page">Promo Film</a>
-      <a href="/marketing-budget/">Budget</a>
-    </nav>
+    <div data-shell-header data-header-meta="Promo Film Direction · Kingdom Centre · 2026"></div>
+    <div data-shell-nav data-current-page="promo-film"></div>
 
     <main id="top">
       <div class="title-block">
@@ -139,13 +126,9 @@
       </div>
     </main>
 
-    <footer class="site-footer">
-      <div class="footer-logo"><span class="logo-name">WOSOL</span><span class="logo-sub">CONCIERGE</span></div>
-      <div class="footer-meta">Confidential · Promo Film Direction · 2026</div>
-    </footer>
+    <div data-shell-footer data-footer-meta="Confidential · Promo Film Direction · 2026"></div>
   </div>
 
   <a class="back-btn" href="#top" aria-label="Back to top">↑</a>
 </body>
 </html>
-
