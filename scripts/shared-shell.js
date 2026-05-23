@@ -5,6 +5,7 @@ const hubPages = [
   { key: 'booth-experience', label: 'Booth Experience', href: '/booth-experience/' },
   { key: 'promo-film', label: 'Promo Film', href: '/promo-film/' },
   { key: 'marketing-budget', label: 'Budget', href: '/marketing-budget/' },
+  { key: 'idea-bank', label: 'Idea Bank', href: '/idea-bank/' },
 ];
 
 function createLogo(className) {
