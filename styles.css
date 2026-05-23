@@ -138,24 +138,24 @@ p + p {
   min-width: 0;
 }
 
-.intro-wosol-ar {
+.intro-wosol-name {
   color: var(--navy-deep);
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: clamp(42px, 8vw, 88px);
-  font-weight: 700;
-  letter-spacing: 0;
+  font-weight: 600;
+  letter-spacing: 0.18em;
   line-height: 1;
 }
 
-.intro-wosol-en {
+.intro-wosol-sub {
   margin-top: 10px;
-  color: var(--text-light);
+  color: var(--navy-light);
   direction: ltr;
   font-family: 'Poppins', sans-serif;
   font-size: clamp(8px, 1.2vw, 12px);
-  font-weight: 600;
-  letter-spacing: 0.28em;
-  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 0.30em;
+  line-height: 1;
   text-transform: uppercase;
 }
 
