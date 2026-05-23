@@ -1624,6 +1624,38 @@ p + p {
   color: #fff;
 }
 
+.review-locked-page .page-wrapper,
+.review-locked-page .back-btn,
+.review-locked-page .history-back-btn {
+  filter: blur(7px);
+}
+
+.review-lock-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  display: grid;
+  place-items: center;
+  background: rgba(246, 244, 241, 0.44);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
+.review-lock-overlay span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: min(360px, calc(100vw - 48px));
+  padding: 22px 34px;
+  border: 1px solid rgba(4, 16, 38, 0.14);
+  background: rgba(255, 255, 255, 0.68);
+  color: var(--navy-deep);
+  font-size: clamp(28px, 5vw, 52px);
+  font-weight: 700;
+  line-height: 1.25;
+  box-shadow: 0 22px 70px rgba(4, 16, 38, 0.10);
+}
+
 @media (max-width: 900px) {
   .hero-visual,
   .two-column,

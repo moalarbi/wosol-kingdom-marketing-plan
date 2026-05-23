@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="/styles.css?v=nav-buttons" />
   <script src="/scripts/shared-shell.js" defer></script>
 </head>
-<body>
+<body class="review-locked-page">
   <div class="pattern-bg" aria-hidden="true"></div>
 
   <div class="page-wrapper">
@@ -132,5 +132,8 @@
 
   <a class="back-btn" href="#top" aria-label="Back to top">↑</a>
   <button class="history-back-btn" type="button" aria-label="Back" onclick="if (history.length > 1) { history.back(); } else { location.href = '/'; }">←</button>
+  <div class="review-lock-overlay" aria-label="تحت المراجعة">
+    <span>تحت المراجعة</span>
+  </div>
 </body>
 </html>
