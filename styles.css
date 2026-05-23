@@ -132,31 +132,10 @@ p + p {
 }
 
 .intro-wosol-mark {
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
   min-width: 0;
-}
-
-.intro-wosol-name {
-  color: var(--navy-deep);
-  font-family: 'Poppins', sans-serif;
-  font-size: clamp(42px, 8vw, 88px);
-  font-weight: 600;
-  letter-spacing: 0.18em;
-  line-height: 1;
-}
-
-.intro-wosol-sub {
-  margin-top: 10px;
-  color: var(--navy-light);
-  direction: ltr;
-  font-family: 'Poppins', sans-serif;
-  font-size: clamp(8px, 1.2vw, 12px);
-  font-weight: 400;
-  letter-spacing: 0.30em;
-  line-height: 1;
-  text-transform: uppercase;
+  transform: scale(2.85);
+  transform-origin: left center;
 }
 
 .intro-kingdom-mark {
@@ -1859,6 +1838,10 @@ p + p {
     width: min(420px, calc(100vw - 40px));
   }
 
+  .intro-wosol-mark {
+    transform: scale(1.95);
+  }
+
   .intro-kingdom-mark {
     width: clamp(92px, 27vw, 124px);
   }
@@ -1999,6 +1982,10 @@ p + p {
 }
 
 @media (max-width: 370px) {
+  .intro-wosol-mark {
+    transform: scale(1.7);
+  }
+
   .hub-title {
     font-size: clamp(17px, 5.1vw, 19px);
   }
