@@ -1624,6 +1624,15 @@ p + p {
   color: #fff;
 }
 
+.history-back-btn {
+  font-size: 0;
+}
+
+.history-back-btn::before {
+  content: "→";
+  font-size: 17px;
+}
+
 .review-locked-page .page-wrapper,
 .review-locked-page .back-btn,
 .review-locked-page .history-back-btn {
@@ -2152,12 +2161,74 @@ p + p {
   line-height: 1.9;
 }
 
+.uniform-scene-list {
+  display: grid;
+  gap: 38px;
+  margin-bottom: 34px;
+}
+
+.uniform-scene-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #fff;
+  box-shadow: 0 22px 70px rgba(4, 16, 38, 0.07);
+}
+
+.uniform-scene-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: var(--beige-warm);
+}
+
+.uniform-scene-copy {
+  min-width: 0;
+  padding: clamp(28px, 4vw, 52px);
+}
+
+.uniform-scene-copy h3 {
+  margin-bottom: 14px;
+  color: var(--navy-deep);
+  font-size: clamp(22px, 2.6vw, 34px);
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.uniform-scene-copy p {
+  color: var(--text-body);
+  font-size: 15px;
+  line-height: 2;
+}
+
 @media (max-width: 768px) {
   .uniform-image-duo {
     grid-template-columns: 1fr;
   }
 
-  .uniform-figure img {
+  .uniform-figure img,
+  .uniform-scene-card img {
+    aspect-ratio: 4 / 3;
     height: auto;
+  }
+
+  .uniform-scene-list {
+    gap: 28px;
+  }
+
+  .uniform-scene-copy {
+    padding: 24px 20px 28px;
+  }
+
+  .uniform-scene-copy h3 {
+    font-size: 24px;
+  }
+
+  .uniform-scene-copy p {
+    font-size: 14px;
+    line-height: 1.9;
   }
 }
