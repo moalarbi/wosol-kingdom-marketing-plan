@@ -123,8 +123,9 @@ p + p {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: auto auto;
   align-items: center;
+  justify-content: center;
   gap: clamp(34px, 8vw, 120px);
   width: min(720px, calc(100vw - 48px));
   direction: ltr;
@@ -137,12 +138,12 @@ p + p {
 }
 
 .intro-wosol-mark .logo-name {
-  font-size: clamp(42px, 8vw, 88px);
+  font-size: clamp(34px, 6.4vw, 68px);
 }
 
 .intro-wosol-mark .logo-sub {
-  margin-top: 10px;
-  font-size: clamp(8px, 1.2vw, 12px);
+  margin-top: 8px;
+  font-size: clamp(7px, 0.95vw, 10px);
 }
 
 .intro-kingdom-mark {
@@ -1846,12 +1847,12 @@ p + p {
   }
 
   .intro-wosol-mark .logo-name {
-    font-size: clamp(34px, 10.5vw, 43px);
+    font-size: clamp(20px, 5.8vw, 24px);
   }
 
   .intro-wosol-mark .logo-sub {
-    margin-top: 8px;
-    font-size: clamp(7px, 2.1vw, 9px);
+    margin-top: 5px;
+    font-size: clamp(5px, 1.35vw, 5.8px);
   }
 
   .intro-kingdom-mark {
@@ -2000,11 +2001,11 @@ p + p {
   }
 
   .intro-wosol-mark .logo-name {
-    font-size: clamp(30px, 9.8vw, 36px);
+    font-size: clamp(19px, 5.9vw, 22px);
   }
 
   .intro-wosol-mark .logo-sub {
-    font-size: 7px;
+    font-size: 5px;
   }
 
   .intro-kingdom-mark {
