@@ -11,15 +11,17 @@
   <link rel="preload" as="image" href="/assets/promo-images/scene-02.png" />
   <style>
     .promo-page .page-wrapper {
-      max-width: 960px;
+      max-width: 1120px;
     }
 
     .promo-page .title-block {
-      margin-bottom: 72px;
+      margin-bottom: 76px;
+      text-align: center;
     }
 
     .promo-page .page-title {
       max-width: 760px;
+      margin-inline: auto;
       font-size: clamp(34px, 5vw, 54px);
       line-height: 1.25;
       white-space: normal;
@@ -46,31 +48,32 @@
 
     .scene-list {
       display: grid;
-      gap: 18px;
+      gap: 38px;
     }
 
     .scene-card {
       display: grid;
-      grid-template-columns: 230px 1fr;
-      gap: 26px;
-      align-items: stretch;
-      padding: 18px;
+      grid-template-columns: 1fr;
+      overflow: hidden;
+      padding: 0;
       border: 1px solid var(--border);
       background: #fff;
+      box-shadow: 0 22px 70px rgba(4, 16, 38, 0.07);
     }
 
     .scene-card img {
       display: block;
       width: 100%;
-      height: 100%;
-      min-height: 164px;
+      height: auto;
+      aspect-ratio: 16 / 9;
       object-fit: cover;
       background: var(--beige-warm);
     }
 
     .scene-copy {
       align-self: center;
-      padding: 6px 0;
+      min-width: 0;
+      padding: clamp(28px, 4vw, 52px);
     }
 
     .scene-tag,
@@ -83,24 +86,24 @@
 
     .scene-tag {
       display: block;
-      margin-bottom: 10px;
+      margin-bottom: 14px;
       color: var(--beige-sand);
       font-size: 10px;
       letter-spacing: 0.18em;
     }
 
     .scene-copy h3 {
-      margin-bottom: 8px;
+      margin-bottom: 14px;
       color: var(--navy-deep);
-      font-size: 18px;
+      font-size: clamp(22px, 2.6vw, 34px);
       font-weight: 700;
-      line-height: 1.55;
+      line-height: 1.45;
     }
 
     .scene-copy p {
       color: var(--text-body);
-      font-size: 13.5px;
-      line-height: 1.9;
+      font-size: 15px;
+      line-height: 2;
     }
 
     .scene-feeling {
@@ -111,6 +114,32 @@
       letter-spacing: 0.12em;
     }
 
+    .production-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .production-note {
+      padding: 26px;
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.72);
+    }
+
+    .production-note h3 {
+      margin-bottom: 10px;
+      color: var(--navy-deep);
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    .production-note p {
+      color: var(--text-body);
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
     @media (max-width: 900px) {
       .promo-page .strategy-grid {
         grid-template-columns: 1fr;
@@ -118,12 +147,59 @@
 
       .scene-card {
         grid-template-columns: 1fr;
-        gap: 18px;
+      }
+
+      .scene-copy {
+        padding: 28px 24px 32px;
       }
 
       .scene-card img {
-        aspect-ratio: 16 / 10;
-        min-height: auto;
+        aspect-ratio: 4 / 3;
+      }
+
+      .production-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .promo-page .page-wrapper {
+        padding-inline: 18px;
+      }
+
+      .promo-page .title-block {
+        margin-bottom: 54px;
+      }
+
+      .promo-page .page-title {
+        font-size: clamp(31px, 9vw, 44px);
+      }
+
+      .promo-page .exec-summary {
+        margin-bottom: 62px;
+      }
+
+      .scene-list {
+        gap: 28px;
+      }
+
+      .scene-copy {
+        padding: 24px 20px 28px;
+      }
+
+      .scene-tag,
+      .scene-feeling {
+        letter-spacing: 0.1em;
+        white-space: normal;
+      }
+
+      .scene-copy h3 {
+        font-size: 24px;
+      }
+
+      .scene-copy p {
+        font-size: 14px;
+        line-height: 1.9;
       }
     }
   </style>
@@ -249,6 +325,26 @@
             </article>
 
             <article class="scene-card">
+              <img src="/assets/promo-images/scene-07.png" alt="لحظة تسليم هادئة داخل تجربة WOSOL" loading="lazy" />
+              <div class="scene-copy">
+                <span class="scene-tag">Scene 07 · Continuity</span>
+                <h3>العناية التي لا تنقطع</h3>
+                <p>بعد كل انتقال، يظهر أثر الخدمة لا كحدث منفصل بل كاستمرارية طبيعية: حقيبة وصلت، طلب اكتمل، ومسار الضيف بقي خفيفًا.</p>
+                <span class="scene-feeling">Feeling · Continuity</span>
+              </div>
+            </article>
+
+            <article class="scene-card">
+              <img src="/assets/promo-images/scene-09.png" alt="لقطة مسائية تعكس هدوء الخدمة الفاخرة" loading="lazy" />
+              <div class="scene-copy">
+                <span class="scene-tag">Scene 09 · Memory</span>
+                <h3>ما يبقى بعد انتهاء الزيارة</h3>
+                <p>المشهد لا يختتم بالشراء أو المغادرة فقط، بل بالإحساس المتبقي: المكان كان أسهل، والقرار كان أخف، والتجربة بدت مُدارة بالكامل.</p>
+                <span class="scene-feeling">Feeling · Memory</span>
+              </div>
+            </article>
+
+            <article class="scene-card">
               <img src="/assets/promo-images/scene-10.png" alt="ختام تجربة الحياة المعتنى بها" loading="lazy" />
               <div class="scene-copy">
                 <span class="scene-tag">Scene 10 · Partnership</span>
@@ -264,6 +360,40 @@
       <section class="section">
         <div class="section-header">
           <span class="section-num">03</span>
+          <div>
+            <h2 class="section-title">قواعد عرض الصور</h2>
+            <p class="section-title-en">Image Flow & Mobile Rules</p>
+          </div>
+        </div>
+        <div class="section-body">
+          <p>
+            لكي لا يتحول الفيلم إلى معرض مزدحم، تُعرض كل صورة أولًا بكامل حضورها، ثم يأتي النص تحتها مباشرة كتعليق إخراجي واضح.
+            هذا الترتيب يجعل الصفحة أطول وأكثر هدوءًا، ويمنع تغطية الكلام على الصورة في الجوال أو الشاشات الصغيرة.
+          </p>
+          <div class="production-grid">
+            <article class="production-note">
+              <h3>الصورة تقود اللقطة</h3>
+              <p>كل مشهد يبدأ بصورة عريضة مستقلة، دون طبقات نصية فوقها، حتى يستطيع القارئ تقييم التكوين البصري بوضوح.</p>
+            </article>
+            <article class="production-note">
+              <h3>النص يأتي كتعليق تنفيذي</h3>
+              <p>العنوان والوصف أسفل الصورة يشرحان وظيفة المشهد، الإحساس المطلوب، ودوره داخل تسلسل الفيلم.</p>
+            </article>
+            <article class="production-note">
+              <h3>الجوال بنفس المنطق</h3>
+              <p>في الجوال تبقى الصورة أولًا بنسبة ثابتة، ثم يظهر النص تحتها بمسافة مريحة وحجم قراءة مناسب.</p>
+            </article>
+            <article class="production-note">
+              <h3>إيقاع أطول وأهدأ</h3>
+              <p>المسافات بين المشاهد مقصودة حتى يشعر القارئ بانتقال سينمائي، لا بتكدس صور متتابعة.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <span class="section-num">04</span>
           <div>
             <h2 class="section-title">معيار التنفيذ البصري</h2>
             <p class="section-title-en">Production Direction</p>
