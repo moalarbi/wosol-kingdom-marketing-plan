@@ -1,0 +1,48 @@
+{
+  "title": "WOSOL × Kingdom Centre Strategy Hub",
+  "subtitle": "A centralized executive platform organizing the launch strategy, operational experience, visual identity, hospitality system, and marketing direction for the WOSOL Concierge experience inside Kingdom Centre.",
+  "cards": [
+    {
+      "number": "01",
+      "title": "Marketing Strategy",
+      "description": "الخطة التسويقية والتشغيلية الحالية، مع القنوات، تجربة الزائر، مؤشرات الأداء، وخطة أول 90 يوم.",
+      "href": "/marketing-plan/",
+      "cta": "Open Strategy"
+    },
+    {
+      "number": "02",
+      "title": "Uniform & Trolley System",
+      "description": "لغة الزي، القفازات البيضاء، العربة الذهبية، البادج، وطريقة حضور الفريق داخل المملكة.",
+      "href": "/uniform-system/",
+      "cta": "Open System"
+    },
+    {
+      "number": "03",
+      "title": "Booth & Desk Experience",
+      "description": "تصور البوث كنقطة استقبال فندقية راقية، مع رحلة التفاعل، المواد، الإضاءة، والـ QR.",
+      "href": "/booth-experience/",
+      "cta": "Open Experience"
+    },
+    {
+      "number": "04",
+      "title": "Promo Video Direction",
+      "description": "The White Gloves Signature",
+      "href": "/promo-film/",
+      "cta": "Open Film Brief"
+    },
+    {
+      "number": "05",
+      "title": "Marketing Budget",
+      "description": "صفحة ميزانية تنفيذية منظمة للتصوير، الفيديو، العلاقات العامة، المؤثرين، المواد، والتحليلات.",
+      "href": "/marketing-budget/",
+      "cta": "Open Budget"
+    },
+    {
+      "number": "06",
+      "title": "بنك الأفكار",
+      "description": "مساحة تنظيمية مفتوحة لتطوير المبادرات، ترتيب المقترحات، وتحويل الملاحظات إلى فرص قابلة للتنفيذ داخل التجربة.",
+      "href": "/idea-bank/",
+      "cta": "Open Ideas"
+    }
+  ]
+}

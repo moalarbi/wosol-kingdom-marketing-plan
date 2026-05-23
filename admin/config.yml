@@ -1,0 +1,79 @@
+backend:
+  name: github
+  repo: moalarbi/wosol-kingdom-marketing-plan
+  branch: main
+  base_url: https://wosol-kingdom-marketing-plan.vercel.app
+  auth_endpoint: /api/auth
+
+media_folder: assets/images-jpg
+public_folder: /assets/images-jpg
+
+locale: ar
+
+collections:
+  - name: hub
+    label: "الصفحة الرئيسية"
+    files:
+      - name: hub_content
+        label: "محتوى Hub"
+        file: _content/hub.json
+        fields:
+          - { label: "عنوان الصفحة", name: title, widget: string }
+          - { label: "وصف الصفحة", name: subtitle, widget: text }
+          - label: "بطاقات الصفحات"
+            name: cards
+            widget: list
+            fields:
+              - { label: "الرقم", name: number, widget: string }
+              - { label: "العنوان", name: title, widget: string }
+              - { label: "الوصف", name: description, widget: text }
+              - { label: "رابط الصفحة", name: href, widget: string }
+              - { label: "نص الزر", name: cta, widget: string }
+
+  - name: marketing_plan
+    label: "خطة التسويق"
+    files:
+      - name: marketing_content
+        label: "محتوى خطة التسويق"
+        file: _content/marketing-plan.json
+        fields:
+          - { label: "عنوان الصفحة (عربي)", name: title_ar, widget: string }
+          - { label: "ملخص تنفيذي", name: exec_summary, widget: text }
+          - label: "أهداف 90 يوم"
+            name: objectives
+            widget: list
+            fields:
+              - { label: "العنوان", name: title, widget: string }
+              - { label: "الوصف", name: description, widget: text }
+
+  - name: uniform_system
+    label: "نظام الزي والعربة"
+    files:
+      - name: uniform_content
+        label: "محتوى نظام الزي"
+        file: _content/uniform-system.json
+        fields:
+          - { label: "عنوان الصفحة", name: title, widget: string }
+          - { label: "المقدمة", name: intro, widget: text }
+
+  - name: booth_experience
+    label: "تجربة البوث"
+    files:
+      - name: booth_content
+        label: "محتوى تجربة البوث"
+        file: _content/booth-experience.json
+        fields:
+          - { label: "عنوان الصفحة", name: title, widget: string }
+          - { label: "المقدمة", name: intro, widget: text }
+
+  - name: settings
+    label: "الإعدادات العامة"
+    files:
+      - name: global
+        label: "إعدادات الموقع"
+        file: _content/settings.json
+        fields:
+          - { label: "اسم العلامة (عربي)", name: brand_ar, widget: string }
+          - { label: "اسم العلامة (إنجليزي)", name: brand_en, widget: string }
+          - { label: "Tagline", name: tagline, widget: string }
+          - { label: "نص الـ Intro Screen", name: intro_label, widget: string }
