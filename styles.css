@@ -107,7 +107,7 @@ p + p {
   background:
     radial-gradient(circle at 50% 44%, rgba(209, 199, 186, 0.24), transparent 28rem),
     var(--white-soft);
-  animation: intro-exit 2.45s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation: intro-exit 3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   pointer-events: none;
 }
 
@@ -119,33 +119,73 @@ p + p {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cpath d='M40 0 L80 40 L40 80 L0 40Z' fill='none' stroke='%23041026' stroke-width='1'/%3E%3Cpath d='M40 20 L60 40 L40 60 L20 40Z' fill='none' stroke='%23041026' stroke-width='0.5'/%3E%3C/svg%3E");
 }
 
-.intro-mark {
+.intro-lockup {
   position: relative;
   z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: clamp(34px, 8vw, 120px);
+  width: min(720px, calc(100vw - 48px));
+  direction: ltr;
+  animation: intro-mark 2.72s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.intro-wosol-mark {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+.intro-wosol-ar {
+  color: var(--navy-deep);
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-size: clamp(42px, 8vw, 88px);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+.intro-wosol-en {
+  margin-top: 10px;
+  color: var(--text-light);
   direction: ltr;
-  gap: 5px;
-  text-align: center;
-  animation: intro-mark 2.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(8px, 1.2vw, 12px);
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.intro-kingdom-mark {
+  display: grid;
+  place-items: center;
+  width: clamp(116px, 18vw, 190px);
+}
+
+.intro-kingdom-mark img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .intro-line {
   position: absolute;
-  top: calc(50% + 58px);
+  top: calc(50% + 82px);
   z-index: 1;
   width: min(340px, 62vw);
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--beige-sand), transparent);
   transform: scaleX(0);
   transform-origin: center;
-  animation: intro-line 1.55s 0.42s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation: intro-line 1.9s 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 .intro-title {
   position: absolute;
-  top: calc(50% + 84px);
+  top: calc(50% + 112px);
   z-index: 1;
   margin: 0;
   color: var(--text-light);
@@ -154,7 +194,7 @@ p + p {
   letter-spacing: 0.30em;
   text-transform: uppercase;
   opacity: 0;
-  animation: intro-title 1.2s 0.98s ease forwards;
+  animation: intro-title 1.35s 1.15s ease forwards;
 }
 
 @keyframes intro-mark {
@@ -1810,6 +1850,26 @@ p + p {
     font-size: 9px;
   }
 
+  .intro-lockup {
+    gap: 28px;
+    width: min(420px, calc(100vw - 40px));
+  }
+
+  .intro-kingdom-mark {
+    width: clamp(92px, 27vw, 124px);
+  }
+
+  .intro-line {
+    top: calc(50% + 70px);
+    width: min(280px, 70vw);
+  }
+
+  .intro-title {
+    top: calc(50% + 98px);
+    max-width: 80vw;
+    text-align: center;
+  }
+
   .hub-hero-panel,
   .hub-card,
   .budget-summary-grid article {
@@ -1980,7 +2040,7 @@ p + p {
     animation-duration: 0.2s;
   }
 
-  .intro-mark,
+  .intro-lockup,
   .intro-line,
   .intro-title {
     animation-duration: 0.2s;
