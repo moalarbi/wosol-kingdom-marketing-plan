@@ -134,8 +134,15 @@ p + p {
 .intro-wosol-mark {
   align-items: flex-start;
   min-width: 0;
-  transform: scale(2.85);
-  transform-origin: left center;
+}
+
+.intro-wosol-mark .logo-name {
+  font-size: clamp(42px, 8vw, 88px);
+}
+
+.intro-wosol-mark .logo-sub {
+  margin-top: 10px;
+  font-size: clamp(8px, 1.2vw, 12px);
 }
 
 .intro-kingdom-mark {
@@ -1838,12 +1845,17 @@ p + p {
     width: min(420px, calc(100vw - 40px));
   }
 
-  .intro-wosol-mark {
-    transform: scale(1.95);
+  .intro-wosol-mark .logo-name {
+    font-size: clamp(34px, 10.5vw, 43px);
+  }
+
+  .intro-wosol-mark .logo-sub {
+    margin-top: 8px;
+    font-size: clamp(7px, 2.1vw, 9px);
   }
 
   .intro-kingdom-mark {
-    width: clamp(92px, 27vw, 124px);
+    width: clamp(74px, 23vw, 92px);
   }
 
   .intro-line {
@@ -1982,8 +1994,21 @@ p + p {
 }
 
 @media (max-width: 370px) {
-  .intro-wosol-mark {
-    transform: scale(1.7);
+  .intro-lockup {
+    gap: 20px;
+    width: min(340px, calc(100vw - 32px));
+  }
+
+  .intro-wosol-mark .logo-name {
+    font-size: clamp(30px, 9.8vw, 36px);
+  }
+
+  .intro-wosol-mark .logo-sub {
+    font-size: 7px;
+  }
+
+  .intro-kingdom-mark {
+    width: 70px;
   }
 
   .hub-title {
