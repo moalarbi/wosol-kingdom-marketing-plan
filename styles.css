@@ -142,8 +142,8 @@ p + p {
 }
 
 .intro-wosol-mark .logo-sub {
-  margin-top: 8px;
-  font-size: clamp(7px, 0.95vw, 10px);
+  margin-top: 11px;
+  font-size: clamp(12px, 2.1vw, 22px);
 }
 
 .intro-kingdom-mark {
@@ -1852,8 +1852,8 @@ p + p {
   }
 
   .intro-wosol-mark .logo-sub {
-    margin-top: 5px;
-    font-size: clamp(5px, 1.35vw, 5.8px);
+    margin-top: 7px;
+    font-size: clamp(7.8px, 2.2vw, 9px);
   }
 
   .intro-kingdom-mark {
@@ -2007,7 +2007,7 @@ p + p {
   }
 
   .intro-wosol-mark .logo-sub {
-    font-size: 5px;
+    font-size: 7px;
   }
 
   .intro-kingdom-mark {
