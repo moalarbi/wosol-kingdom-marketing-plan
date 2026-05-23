@@ -124,7 +124,7 @@ p + p {
   z-index: 1;
   display: grid;
   grid-template-columns: auto auto;
-  align-items: center;
+  align-items: end;
   justify-content: center;
   gap: clamp(34px, 8vw, 120px);
   width: min(720px, calc(100vw - 48px));
@@ -150,7 +150,6 @@ p + p {
   display: grid;
   place-items: center;
   width: clamp(116px, 18vw, 190px);
-  transform: translateY(clamp(-18px, -1.8vw, -10px));
 }
 
 .intro-kingdom-mark img {
@@ -1858,7 +1857,6 @@ p + p {
 
   .intro-kingdom-mark {
     width: clamp(74px, 23vw, 92px);
-    transform: translateY(-14px);
   }
 
   .intro-line {
@@ -2012,7 +2010,6 @@ p + p {
 
   .intro-kingdom-mark {
     width: 70px;
-    transform: translateY(-12px);
   }
 
   .hub-title {
