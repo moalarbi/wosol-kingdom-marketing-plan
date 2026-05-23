@@ -66,7 +66,7 @@ function renderFooter(target) {
   meta.className = 'footer-meta';
   meta.textContent = target.dataset.footerMeta || 'Confidential · Executive Strategy Hub · 2026';
 
-  footer.append(logo, meta);
+  footer.append(meta, logo);
   target.replaceWith(footer);
 }
 
