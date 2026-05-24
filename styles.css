@@ -1626,6 +1626,11 @@ p + p {
   filter: blur(7px);
 }
 
+.review-locked-page .history-back-btn {
+  z-index: 10000;
+  filter: none;
+}
+
 .review-lock-overlay {
   position: fixed;
   inset: 0;
