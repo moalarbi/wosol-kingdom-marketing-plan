@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/styles.css?v=idea-bank-visuals" />
+  <link rel="stylesheet" href="/styles.css?v=budget-unlock" />
   <script src="/scripts/shared-shell.js" defer></script>
 </head>
 <body class="review-locked-page">
@@ -133,7 +133,36 @@
   <a class="back-btn" href="#top" aria-label="Back to top">↑</a>
   <button class="history-back-btn" type="button" aria-label="Back" onclick="location.href='/'">→</button>
   <div class="review-lock-overlay" aria-label="قيد المراجعه">
-    <span>قيد المراجعه</span>
+    <div class="review-lock-panel">
+      <span>قيد المراجعه</span>
+      <input class="review-lock-input" type="text" inputmode="numeric" autocomplete="off" aria-label="إدخال" />
+    </div>
   </div>
+  <script>
+    (() => {
+      const key = 'wosolBudgetReviewOpen';
+      const body = document.body;
+      const overlay = document.querySelector('.review-lock-overlay');
+      const input = document.querySelector('.review-lock-input');
+
+      const unlock = () => {
+        body.classList.remove('review-locked-page');
+        overlay?.remove();
+        sessionStorage.setItem(key, '1');
+      };
+
+      if (sessionStorage.getItem(key) === '1') {
+        unlock();
+        return;
+      }
+
+      input?.addEventListener('input', () => {
+        const value = input.value.replace(/[٠-٩]/g, (digit) => '٠١٢٣٤٥٦٧٨٩'.indexOf(digit));
+        if (value === '1997') {
+          unlock();
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
