@@ -160,7 +160,7 @@ p + p {
 
 .intro-line {
   position: absolute;
-  top: calc(50% + 82px);
+  top: calc(50% + 132px);
   z-index: 1;
   width: min(340px, 62vw);
   height: 1px;
@@ -172,7 +172,7 @@ p + p {
 
 .intro-title {
   position: absolute;
-  top: calc(50% + 112px);
+  top: calc(50% + 162px);
   z-index: 1;
   margin: 0;
   color: var(--text-light);
