@@ -149,6 +149,7 @@ p + p {
 .intro-kingdom-mark {
   display: grid;
   place-items: center;
+  transform: translateY(clamp(16px, 2.4vw, 30px));
   width: clamp(116px, 18vw, 190px);
 }
 
@@ -1891,6 +1892,7 @@ p + p {
   }
 
   .intro-kingdom-mark {
+    transform: translateY(10px);
     width: clamp(74px, 23vw, 92px);
   }
 
@@ -2044,6 +2046,7 @@ p + p {
   }
 
   .intro-kingdom-mark {
+    transform: translateY(8px);
     width: 70px;
   }
 
