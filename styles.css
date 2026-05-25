@@ -1699,6 +1699,11 @@ p + p {
     margin-top: -28px;
   }
 
+  .trolley-panel-wrap,
+  .trolley-lower > div {
+    grid-column: auto;
+  }
+
   .hub-nav-block {
     align-items: start;
     flex-direction: column;
@@ -2257,11 +2262,18 @@ p + p {
 /* Trolley panel: image stacked above the Operating Note text */
 .trolley-panel-wrap {
   display: flex;
+  grid-column: 1;
+  grid-row: 1;
   flex-direction: column;
   gap: 0;
   padding: 0;
+  text-align: right;
   background: none;
   border: none;
+}
+
+.trolley-lower > div {
+  grid-column: 2;
 }
 
 .trolley-panel-figure {
