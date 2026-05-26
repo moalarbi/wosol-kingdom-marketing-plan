@@ -138,12 +138,12 @@ p + p {
 }
 
 .intro-wosol-mark .logo-name {
-  font-size: clamp(26px, 4.2vw, 46px);
+  font-size: clamp(24px, 3.85vw, 42px);
 }
 
 .intro-wosol-mark .logo-sub {
-  margin-top: 8px;
-  font-size: clamp(9px, 1.35vw, 14px);
+  margin-top: 7px;
+  font-size: clamp(8px, 1.22vw, 13px);
 }
 
 .intro-kingdom-mark {
@@ -1897,12 +1897,12 @@ p + p {
   }
 
   .intro-wosol-mark .logo-name {
-    font-size: clamp(16px, 4.8vw, 19px);
+    font-size: clamp(15px, 4.4vw, 18px);
   }
 
   .intro-wosol-mark .logo-sub {
     margin-top: 5px;
-    font-size: clamp(5.8px, 1.75vw, 7px);
+    font-size: clamp(5.4px, 1.62vw, 6.5px);
   }
 
   .intro-kingdom-mark {
@@ -2052,11 +2052,11 @@ p + p {
   }
 
   .intro-wosol-mark .logo-name {
-    font-size: clamp(15px, 4.9vw, 17px);
+    font-size: clamp(14px, 4.5vw, 16px);
   }
 
   .intro-wosol-mark .logo-sub {
-    font-size: 5.7px;
+    font-size: 5.2px;
   }
 
   .intro-kingdom-mark {
