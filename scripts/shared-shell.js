@@ -44,7 +44,11 @@ function renderNav(target) {
   nav.className = 'hub-nav en';
   nav.setAttribute('aria-label', 'Strategy hub navigation');
 
-  hubPages.forEach((page) => {
+  const pages = current === 'hub'
+    ? hubPages.filter((page) => page.key !== 'hub')
+    : hubPages;
+
+  pages.forEach((page) => {
     const link = document.createElement('a');
     link.href = page.href;
     link.textContent = page.label;
