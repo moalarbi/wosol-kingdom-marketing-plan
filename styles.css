@@ -1585,8 +1585,8 @@ p + p {
 .footer-kingdom-logo {
   display: grid;
   place-items: end center;
-  width: 46px;
-  transform: translateY(5px);
+  width: 138px;
+  transform: translateY(15px);
 }
 
 .footer-kingdom-logo img {
