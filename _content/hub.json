@@ -1,25 +1,25 @@
 {
-  "title": "WOSOL × Kingdom Centre Strategy Hub",
-  "subtitle": "A centralized executive platform organizing the launch strategy, operational experience, visual identity, hospitality system, and marketing direction for the WOSOL Concierge experience inside Kingdom Centre.",
+  "title": "Kingdom Centre × WOSOL Concierge Strategy Hub",
+  "subtitle": "A focused executive platform for the Kingdom Centre concierge launch: strategy, visitor experience, visual conduct, booth flow, film direction, and budget decisions.",
   "cards": [
     {
       "number": "01",
       "title": "Marketing Strategy",
-      "description": "الخطة التسويقية والتشغيلية الحالية، مع القنوات، تجربة الزائر، مؤشرات الأداء، وخطة أول 90 يوم.",
+      "description": "خارطة أول 120 يوم: كيف يعرف الزائر الخدمة، أين يراها، وما الذي نقيسه بعد الإطلاق.",
       "href": "/marketing-plan/",
       "cta": "Open Strategy"
     },
     {
       "number": "02",
-      "title": "Uniform & Trolley System",
-      "description": "لغة الزي، القفازات البيضاء، العربة الذهبية، البادج، وطريقة حضور الفريق داخل المملكة.",
+      "title": "Uniform & Trolley",
+      "description": "دليل حضور الفريق: الزي، القفازات، العربة الذهبية، والبادج كما يراها زائر مركز المملكة.",
       "href": "/uniform-system/",
-      "cta": "Open System"
+      "cta": "Open"
     },
     {
       "number": "03",
       "title": "Booth & Desk Experience",
-      "description": "تصور البوث كنقطة استقبال فندقية راقية، مع رحلة التفاعل، المواد، الإضاءة، والـ QR.",
+      "description": "كيف يصبح البوث نقطة استقبال مفهومة داخل مركز المملكة، من أول نظرة حتى بدء المحادثة.",
       "href": "/booth-experience/",
       "cta": "Open Experience"
     },
@@ -33,14 +33,14 @@
     {
       "number": "05",
       "title": "Marketing Budget",
-      "description": "صفحة ميزانية تنفيذية منظمة للتصوير، الفيديو، العلاقات العامة، المؤثرين، المواد، والتحليلات.",
+      "description": "قائمة مشتريات وتشغيل مبسطة لكل ما يحتاجه الإطلاق: تجهيز، محتوى، نشر، وقياس.",
       "href": "/marketing-budget/",
       "cta": "Open Budget"
     },
     {
       "number": "06",
-      "title": "بنك الأفكار",
-      "description": "مساحة تنظيمية مفتوحة لتطوير المبادرات، ترتيب المقترحات، وتحويل الملاحظات إلى فرص قابلة للتنفيذ داخل التجربة.",
+      "title": "Idea Bank",
+      "description": "مكان لتجميع المبادرات الصغيرة التي تجعل زيارة مركز المملكة أخف وأكثر تذكرًا.",
       "href": "/idea-bank/",
       "cta": "Open Ideas"
     }
