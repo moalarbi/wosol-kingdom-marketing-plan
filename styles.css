@@ -1566,11 +1566,11 @@ p + p {
 }
 
 .footer-logo .logo-name {
-  font-size: 14px;
+  font-size: 22px;
 }
 
 .footer-logo .logo-sub {
-  font-size: 6px;
+  font-size: 9px;
 }
 
 .footer-brand-lockup {
@@ -1578,15 +1578,15 @@ p + p {
   grid-template-columns: auto auto;
   align-items: end;
   justify-content: center;
-  gap: 22px;
+  gap: 30px;
   direction: ltr;
 }
 
 .footer-kingdom-logo {
   display: grid;
   place-items: end center;
-  width: 138px;
-  transform: translateY(15px);
+  width: 110px;
+  transform: translateY(8px);
 }
 
 .footer-kingdom-logo img {
