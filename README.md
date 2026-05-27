@@ -19,11 +19,11 @@ http://127.0.0.1:4173/
 
 - `index.html` - executive hub homepage.
 - `marketing-plan/index.html` - original marketing strategy presentation as an internal page.
-- `uniform-system/index.html` - uniform, gloves, badge, and trolley system.
+- `uniform-system/index.html` - uniform, gloves, badge, and trolley framework.
 - `booth-experience/index.html` - concierge booth and desk experience.
 - `promo-film/index.html` - promo film production direction.
 - `marketing-budget/index.html` - executive marketing budget tables and priorities.
-- `styles.css` - WOSOL executive visual system, responsive layout, and editorial sketch placeholders.
+- `styles.css` - WOSOL executive visual framework, responsive layout, and editorial sketch placeholders.
 - `assets/images-jpg/` - generated editorial luxury images used by the marketing plan page.
 - `preview-desktop.png` - desktop verification screenshot.
 - `preview-tablet.png` - tablet verification screenshot.
