@@ -39,7 +39,7 @@ collections:
         fields:
           - { label: "عنوان الصفحة (عربي)", name: title_ar, widget: string }
           - { label: "ملخص تنفيذي", name: exec_summary, widget: text }
-          - label: "أهداف 90 يوم"
+          - label: "خارطة الإنطلاق لأول 120 يوم"
             name: objectives
             widget: list
             fields:
@@ -47,10 +47,10 @@ collections:
               - { label: "الوصف", name: description, widget: text }
 
   - name: uniform_system
-    label: "نظام الزي والعربة"
+    label: "دليل الزي والعربة"
     files:
       - name: uniform_content
-        label: "محتوى نظام الزي"
+        label: "محتوى دليل الزي"
         file: _content/uniform-system.json
         fields:
           - { label: "عنوان الصفحة", name: title, widget: string }
