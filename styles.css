@@ -1557,12 +1557,13 @@ p + p {
 
 .site-footer {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 18px;
+  justify-content: center;
+  gap: 16px;
   margin-top: 44px;
-  padding: 22px 0 4px;
-  border-top: 1px solid var(--border);
+  padding: 6px 0 4px;
+  border-top: 0;
 }
 
 .footer-logo .logo-name {
@@ -1580,19 +1581,6 @@ p + p {
   justify-content: center;
   gap: 26px;
   direction: ltr;
-  position: relative;
-  padding-top: 18px;
-}
-
-.footer-brand-lockup::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: min(320px, 72vw);
-  height: 1px;
-  transform: translateX(-50%);
-  background: var(--border);
 }
 
 .footer-kingdom-logo {
@@ -1612,6 +1600,10 @@ p + p {
   color: var(--text-light);
   direction: ltr;
   font-size: 11px;
+  width: 100%;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  text-align: center;
 }
 
 .back-btn {
@@ -2076,16 +2068,14 @@ p + p {
   }
 
   .site-footer {
-    flex-direction: column;
     text-align: center;
     gap: 12px;
     margin-top: 36px;
-    padding: 20px 0 calc(2px + env(safe-area-inset-bottom));
+    padding: 2px 0 calc(2px + env(safe-area-inset-bottom));
   }
 
   .footer-brand-lockup {
     gap: 24px;
-    padding-top: 16px;
   }
 
   .footer-logo .logo-name {
