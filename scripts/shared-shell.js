@@ -91,3 +91,24 @@ function renderFooter(target) {
 document.querySelectorAll('[data-shell-header]').forEach(renderHeader);
 document.querySelectorAll('[data-shell-nav]').forEach(renderNav);
 document.querySelectorAll('[data-shell-footer]').forEach(renderFooter);
+
+function trimTrailingFooterSpace() {
+  requestAnimationFrame(() => {
+    document.querySelectorAll('.page-wrapper').forEach((wrapper) => {
+      const footer = wrapper.querySelector('.site-footer');
+      if (!footer) return;
+
+      wrapper.style.paddingBottom = '0px';
+      wrapper.style.marginBottom = '0px';
+      wrapper.style.minHeight = '0px';
+      wrapper.style.height = `${Math.ceil(footer.offsetTop + footer.offsetHeight)}px`;
+    });
+  });
+}
+
+trimTrailingFooterSpace();
+window.addEventListener('load', trimTrailingFooterSpace);
+window.addEventListener('resize', trimTrailingFooterSpace);
+if (document.fonts && document.fonts.ready) {
+  document.fonts.ready.then(trimTrailingFooterSpace);
+}
