@@ -65,26 +65,11 @@ function renderFooter(target) {
   const footer = document.createElement('footer');
   footer.className = 'site-footer';
 
-  const logo = createLogo('footer-logo');
-  const kingdomLogo = document.createElement('a');
-  kingdomLogo.className = 'footer-kingdom-logo';
-  kingdomLogo.href = '/';
-  kingdomLogo.setAttribute('aria-label', 'Kingdom Centre');
-
-  const kingdomImg = document.createElement('img');
-  kingdomImg.src = '/assets/brand/almamlaka-logo.png?v=kingdom-logo-new';
-  kingdomImg.alt = '';
-  kingdomLogo.append(kingdomImg);
-
-  const lockup = document.createElement('div');
-  lockup.className = 'footer-brand-lockup';
-  lockup.append(logo, kingdomLogo);
-
   const meta = document.createElement('div');
   meta.className = 'footer-meta';
   meta.textContent = target.dataset.footerMeta || 'Confidential · Executive Strategy Hub · 2026';
 
-  footer.append(meta, lockup);
+  footer.append(meta);
   target.replaceWith(footer);
 }
 
