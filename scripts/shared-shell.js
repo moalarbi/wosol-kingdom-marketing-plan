@@ -30,11 +30,21 @@ function renderHeader(target) {
   const header = document.createElement('header');
   header.className = `site-header ${target.dataset.headerClass || ''}`.trim();
 
-  const meta = document.createElement('div');
-  meta.className = 'header-meta';
-  meta.textContent = target.dataset.headerMeta || 'Executive Strategy Hub · Kingdom Centre · 2026';
+  const kingdomLogo = document.createElement('a');
+  kingdomLogo.className = 'header-kingdom-logo';
+  kingdomLogo.href = '/';
+  kingdomLogo.setAttribute('aria-label', 'Kingdom Centre');
 
-  header.append(meta, createLogo('logo-block'));
+  const kingdomImg = document.createElement('img');
+  kingdomImg.src = '/assets/brand/almamlaka-logo.png?v=kingdom-logo-new';
+  kingdomImg.alt = '';
+  kingdomLogo.append(kingdomImg);
+
+  const lockup = document.createElement('div');
+  lockup.className = 'header-brand-lockup';
+  lockup.append(createLogo('logo-block'), kingdomLogo);
+
+  header.append(lockup);
   target.replaceWith(header);
 }
 

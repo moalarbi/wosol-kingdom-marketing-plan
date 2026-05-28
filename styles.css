@@ -269,11 +269,33 @@ p + p {
 .site-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 28px;
-  padding: 40px 0 36px;
+  justify-content: center;
+  padding: 34px 0 34px;
   border-bottom: 1px solid var(--border);
   margin-bottom: 72px;
+}
+
+.header-brand-lockup {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: end;
+  justify-content: center;
+  gap: clamp(34px, 8vw, 92px);
+  width: min(520px, 100%);
+  direction: ltr;
+}
+
+.header-kingdom-logo {
+  display: grid;
+  place-items: end center;
+  width: clamp(82px, 12vw, 124px);
+  transform: translateY(7px);
+}
+
+.header-kingdom-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .hub-nav {
@@ -1850,12 +1872,26 @@ p + p {
   }
 
   .site-header {
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 52px;
   }
 
-  .header-meta {
-    max-width: 160px;
+  .header-brand-lockup {
+    gap: 34px;
+    width: min(340px, 100%);
+  }
+
+  .site-header .logo-name {
+    font-size: 22px;
+  }
+
+  .site-header .logo-sub {
+    font-size: 8px;
+  }
+
+  .header-kingdom-logo {
+    width: 92px;
+    transform: translateY(6px);
   }
 
   .title-block,
