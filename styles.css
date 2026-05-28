@@ -263,7 +263,7 @@ p + p {
   z-index: 1;
   max-width: 1040px;
   margin: 0 auto;
-  padding: 0 32px 40px;
+  padding: 0 32px 0;
 }
 
 .site-header {
@@ -1841,7 +1841,7 @@ p + p {
 
 @media (max-width: 640px) {
   .page-wrapper {
-    padding: 0 20px 28px;
+    padding: 0 20px 0;
   }
 
   .site-header {
