@@ -367,15 +367,24 @@ p + p {
 }
 
 .hub-title {
-  max-width: 100%;
-  margin: 0 auto 22px;
+  display: block;
+  width: min(780px, 100%);
+  margin: 0 auto 24px;
   color: var(--navy-deep);
   direction: ltr;
-  font-size: clamp(21px, 3.65vw, 42px);
+  font-size: clamp(22px, 2.35vw, 30px);
   font-weight: 600;
   letter-spacing: 0;
-  line-height: 1.08;
-  white-space: nowrap;
+  line-height: 1.22;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.hub-title-full,
+.hub-title-compact {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
 }
 
 .hub-title-compact {
