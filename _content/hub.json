@@ -5,42 +5,42 @@
     {
       "number": "01",
       "title": "Marketing Strategy",
-      "description": "خارطة أول 120 يوم: كيف يعرف الزائر الخدمة، أين يراها، وما الذي نقيسه بعد الإطلاق.",
+      "description": "خطة الإطلاق، الظهور، والقياس خلال أول 120 يوم.",
       "href": "/marketing-plan/",
       "cta": "Open Strategy"
     },
     {
       "number": "02",
       "title": "Uniform & Trolley",
-      "description": "دليل حضور الفريق: الزي، القفازات، العربة، والبادج كما يراها زائر مركز المملكة.",
+      "description": "معايير الزي، العربة، وتفاصيل حضور الفريق.",
       "href": "/uniform-system/",
       "cta": "Open"
     },
     {
       "number": "03",
       "title": "Booth & Desk Experience",
-      "description": "كيف يصبح البوث نقطة استقبال مفهومة داخل مركز المملكة، من أول نظرة حتى بدء المحادثة.",
+      "description": "تصميم نقطة الاستقبال وتجربة الزائر عند البوث.",
       "href": "/booth-experience/",
       "cta": "Open Experience"
     },
     {
       "number": "04",
       "title": "Promo Video Direction",
-      "description": "اتجاه الفيلم الترويجي: كيف تظهر زيارة مركز المملكة أخف وأكثر ترتيبًا من خلال الكونسيرج.",
+      "description": "اتجاه بصري لفيلم يشرح الخدمة بأسلوب راق وواضح.",
       "href": "/promo-film/",
       "cta": "Open Film Brief"
     },
     {
       "number": "05",
       "title": "Marketing Budget",
-      "description": "قائمة مشتريات وتشغيل مبسطة لكل ما يحتاجه الإطلاق: تجهيز، محتوى، نشر، وقياس.",
+      "description": "ميزانية مبسطة للتجهيز، المحتوى، والنشر.",
       "href": "/marketing-budget/",
       "cta": "Open Budget"
     },
     {
       "number": "06",
       "title": "Idea Bank",
-      "description": "مكان لتجميع المبادرات الصغيرة التي تجعل زيارة مركز المملكة أخف وأكثر تذكرًا.",
+      "description": "أفكار صغيرة تضيف قيمة لتجربة الزائر.",
       "href": "/idea-bank/",
       "cta": "Open Ideas"
     }
