@@ -503,6 +503,7 @@ p + p {
   color: var(--text-body);
   font-size: 13.5px;
   line-height: 1.9;
+  text-align: center;
 }
 
 .hub-card .en-card-note {
@@ -907,6 +908,28 @@ p + p {
 .image-frame img {
   height: 100%;
   object-fit: cover;
+}
+
+.marketing-hero-visual {
+  display: block;
+  max-width: 1500px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.marketing-hero-visual .visual-frame {
+  min-height: 0;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.marketing-hero-visual .image-frame img {
+  height: auto;
+  aspect-ratio: 1200 / 750;
+  object-fit: contain;
 }
 
 .visitor-journey-frame img {
