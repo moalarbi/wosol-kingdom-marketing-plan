@@ -909,6 +909,11 @@ p + p {
   object-fit: cover;
 }
 
+.visitor-journey-frame img {
+  object-fit: contain;
+  background: var(--beige-warm);
+}
+
 .section-media img {
   height: auto;
   object-fit: contain;
