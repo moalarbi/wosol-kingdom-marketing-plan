@@ -149,8 +149,8 @@ p + p {
 .intro-kingdom-mark {
   display: grid;
   place-items: center;
-  transform: translateY(clamp(16px, 2.4vw, 30px));
-  width: clamp(116px, 18vw, 190px);
+  transform: none;
+  width: clamp(128px, 19vw, 205px);
 }
 
 .intro-kingdom-mark img {
@@ -1981,8 +1981,8 @@ p + p {
   }
 
   .intro-kingdom-mark {
-    transform: translateY(10px);
-    width: clamp(74px, 23vw, 92px);
+    transform: none;
+    width: clamp(84px, 25vw, 104px);
   }
 
   .intro-line {
@@ -2154,8 +2154,8 @@ p + p {
   }
 
   .intro-kingdom-mark {
-    transform: translateY(8px);
-    width: 70px;
+    transform: none;
+    width: 78px;
   }
 
   .hub-title {
