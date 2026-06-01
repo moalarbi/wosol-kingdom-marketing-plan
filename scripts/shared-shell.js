@@ -36,7 +36,7 @@ function renderHeader(target) {
   kingdomLogo.setAttribute('aria-label', 'Kingdom Centre');
 
   const kingdomImg = document.createElement('img');
-  kingdomImg.src = '/assets/brand/almamlaka-logo.png?v=kingdom-logo-new';
+  kingdomImg.src = '/assets/brand/almamlaka-logo-cropped.png?v=kingdom-logo-baseline';
   kingdomImg.alt = '';
   kingdomLogo.append(kingdomImg);
 
