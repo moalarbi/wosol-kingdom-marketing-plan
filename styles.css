@@ -289,7 +289,7 @@ p + p {
   display: grid;
   place-items: end center;
   width: clamp(82px, 12vw, 124px);
-  transform: translateY(7px);
+  transform: translateY(16px);
 }
 
 .header-kingdom-logo img {
@@ -1900,7 +1900,7 @@ p + p {
 
   .header-kingdom-logo {
     width: 92px;
-    transform: translateY(6px);
+    transform: translateY(14px);
   }
 
   .title-block,
