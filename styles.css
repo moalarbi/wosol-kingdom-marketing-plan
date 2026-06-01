@@ -382,7 +382,9 @@ p + p {
 
 .hub-title-full,
 .hub-title-compact {
-  display: inline-block;
+  display: grid;
+  justify-items: center;
+  gap: 4px;
   width: 100%;
   text-align: center;
 }
