@@ -2437,7 +2437,7 @@ p + p {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 1200 / 896;
+  aspect-ratio: 1200 / 750;
   object-fit: contain;
   background: var(--beige-warm);
 }
