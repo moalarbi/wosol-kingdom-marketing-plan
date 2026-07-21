@@ -153,7 +153,14 @@ p + p {
   width: clamp(128px, 19vw, 205px);
 }
 
-.intro-kingdom-mark img {
+.intro-altanfeethi-mark {
+  display: grid;
+  place-items: center;
+  width: clamp(130px, 18vw, 190px);
+}
+
+.intro-kingdom-mark img,
+.intro-altanfeethi-mark img {
   display: block;
   width: 100%;
   height: auto;
@@ -2013,6 +2020,10 @@ p + p {
     width: clamp(84px, 25vw, 104px);
   }
 
+  .intro-altanfeethi-mark {
+    width: clamp(86px, 24vw, 104px);
+  }
+
   .intro-line {
     top: calc(50% + 70px);
     width: min(280px, 70vw);
@@ -2184,6 +2195,10 @@ p + p {
   .intro-kingdom-mark {
     transform: none;
     width: 78px;
+  }
+
+  .intro-altanfeethi-mark {
+    width: 80px;
   }
 
   .hub-title {
